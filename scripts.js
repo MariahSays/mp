@@ -1,0 +1,1 @@
+/*This is the javascripts for major project - interactive timeline*/
