@@ -34,6 +34,11 @@ function movement(movementName, movementDate, movementHistory, movementImpact,im
   
   //movment method
   this.displayMovement = function(){
+    document.querySelector("#content h1").innerHTML = this.name;
+    document.querySelector("#content h4").innerHTML = this.date;
+    document.querySelector("#content").style.backgroundImage= "url("+ this.image +")";
+    loadFileInto(this.history, "#content #history p");
+    loadFileInto(this.impact, "#content #impact p");    
   }
   
   artNouvea = new movement("Art Nouvea","1890-1915","artnouveahistory.html","artnouveaimpact.html","artnouvea.jpg");

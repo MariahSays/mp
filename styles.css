@@ -28,6 +28,9 @@
 #content h4{
   margin:0;
 }
+#content h3{
+  display: none;
+}
 
 #footer{
 }
