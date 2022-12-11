@@ -21,10 +21,12 @@ function loadFileInto(fromFile, whereTo) {
 	// initiate request and wait for response
 	ajax.send();
 
-}/*This is the javascripts for major project - interactive timeline*/
+}
+
+/*This is the javascripts for major project - interactive timeline*/
 
 //defining movement object starts here
-function movement(movementName, movementDate, movementHistory, movementImpact,imageURL){
+function Movement(movementName, movementDate, movementHistory, movementImpact,imageURL){
   
   this.name = movementName;
   this.date = movementDate;
@@ -36,21 +38,49 @@ function movement(movementName, movementDate, movementHistory, movementImpact,im
   this.displayMovement = function(){
     document.querySelector("#content h1").innerHTML = this.name;
     document.querySelector("#content h4").innerHTML = this.date;
-    document.querySelector("#content").style.backgroundImage= "url("+ this.image +")";
-    loadFileInto(this.history, "#content #history p");
-    loadFileInto(this.impact, "#content #impact p");    
+    document.querySelector("#content").style.backgroundImage= this.image;
+    document.querySelector("#history h3").innerHTML = "History";
+    document.querySelector("#impact h3").innerHTML = "Impact";
+    loadFileInto(this.history, "#history p");
+    loadFileInto(this.impact, "#impact p");
   }
-  
-  artNouvea = new movement("Art Nouvea","1890-1915","artnouveahistory.html","artnouveaimpact.html","artnouvea.jpg");
-  futurism = new movement("Futurism","1910-1930","futurismhistory.html","futurismimpact.html","futurism.jpg");
-  artDeco = new movement("Art Deco","1915-1925","artdecohistory.html","artdecoimpact.html","artdeco.jpg");
-  bauhaus = new movement();
-  temp = new movement();
-  temp = new movement();
-  temp = new movement();
-  newWave = new movement("New Wave","1890-1915","newwavehistory.html","newwaveimpact.html","newwave.jpg");
-  postModernism = new movement("Post Modernism","date","postmodernismhistory.html","postmodernismimpact.html","postmodernism.jpg");
-  internationalStyle = new movement("International Typographic Style","date","internationalstylehistory.html","internationalstyleimpact.html","internationalstyle.jpg");
+}
+  //defining movements
+
+  //timelineStart = new movement();
+  artNouvea = new Movement("Art Nouvea","1890-1915","artnouveahistory.html","artnouveaimpact.html","images/artnouvea.jpg");
+  futurism = new Movement("Futurism","1910-1930","futurismhistory.html","futurismimpact.html","futurism.jpg");
+  artDeco = new Movement("Art Deco","1915-1925","artdecohistory.html","artdecoimpact.html","artdeco.jpg");
+  bauhaus = new Movement("Bauhaus","1920-1940","bauhaushistory.html","bauhausimpact.html","bauhaus.jpg");
+  swissStyle = new Movement("International Typographic Style(Swiss Style)","1950-1970","swissstylehistory.html","swissstyleimpact.html","swissstylejpg");
+  kitsch = new Movement("American Kitsch","1940’s - 1960’s","kitschhistory.html","kitschimpact.html","kitsch.jpg");
+  popArt = new Movement("Pop Art ","1970’s - 1980’","poparthistory.html","popartimpact.html","popart.jpg");
+  newWave = new Movement("New Wave","1890-1915","newwavehistory.html","newwaveimpact.html","newwave.jpg");
+  postModernism = new Movement("Post Modernism","1970-1990’","postmodernismhistory.html","postmodernismimpact.html","postmodernism.jpg");
+  internationalStyle = new Movement("Memphis Design"," 1980’s-1990’","memphishistory.html","memphisimpact.html","memphis.jpg");
+  //timelineEnd = new movement();
+
+//mouseover function definition
+/*
+function displayBackground(){
   
 }
+*/
+
+window.onload = function(){
+  /*mouse over event
+  document.querySelector("firstMovement").onmouseover =function(){
+    displayBackground();
+  }
+  */
+  
+  //onlcick events start here
+  document.querySelector("#startMovement").onclick = function(){
+    timelineStart.displayMovement();
+  }
+  document.querySelector("#firstMovement").onclick = function(){
+    artNouvea.displayMovement();    
+}
+}
+
 

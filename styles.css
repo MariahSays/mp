@@ -3,21 +3,36 @@
 
 * {
   font-family: 'Spectral', serif;
+  background-image: none;
+}
+body{
   background-color: #FEF2E8;
+  margin: 0;
+  padding: 0;
 }
+#gridContainer{
+  display: grid;
+  grid-template-columns: 20% 60%;
+  grid-gap: 5%;
+}
+
+/*timeline styles start here*/
 #timeline{
-  width: 40%;
+  background-color: #FEF2E8;
+  border: .5vh solid  #7960B3;
 }
+
 #timeline li{
   list-style-type: none;
+  
 }
 
 /*Styling for main content starts here*/
+
 #content{
-  width: 60%;
   border: .5vh solid  #7960B3;
   padding: 1vh;
-  
+  background-image:none;
 }
 
 #content h1{
@@ -26,12 +41,20 @@
 }
 
 #content h4{
-  margin:0;
-}
-#content h3{
-  display: none;
+  margin: 0;
 }
 
+/*footer starts here*/
 #footer{
+  background-color:#7960B3;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
+#footer a p{
+  margin-left: 5em;
+  margin-bottom: 0;
+}
+
 
