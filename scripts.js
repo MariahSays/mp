@@ -36,4 +36,16 @@ function movement(movementName, movementDate, movementHistory, movementImpact,im
   this.displayMovement = function(){
   }
   
+  artNouvea = new movement("Art Nouvea","1890-1915","artnouveahistory.html","artnouveaimpact.html","artnouvea.jpg");
+  futurism = new movement("Futurism","1910-1930","futurismhistory.html","futurismimpact.html","futurism.jpg");
+  artDeco = new movement("Art Deco","1915-1925","artdecohistory.html","artdecoimpact.html","artdeco.jpg");
+  bauhaus = new movement();
+  temp = new movement();
+  temp = new movement();
+  temp = new movement();
+  newWave = new movement("New Wave","1890-1915","newwavehistory.html","newwaveimpact.html","newwave.jpg");
+  postModernism = new movement("Post Modernism","date","postmodernismhistory.html","postmodernismimpact.html","postmodernism.jpg");
+  internationalStyle = new movement("International Typographic Style","date","internationalstylehistory.html","internationalstyleimpact.html","internationalstyle.jpg");
+  
 }
+
