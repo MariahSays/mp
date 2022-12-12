@@ -50,7 +50,7 @@ function Movement(movementName, movementDate, movementHistory, movementImpact, i
 //timelineStart = new movement();
 artNouvea = new Movement("Art Nouvea", "1890-1915", "artnouveahistory.html", "artnouveaimpact.html", "images/artnouvea.jpg");
 futurism = new Movement("Futurism", "1910-1930", "futurismhistory.html", "futurismimpact.html", "futurism.jpg");
-artDeco = new Movement("Art Deco", "1915-1925", "artdecohistory.html", "artdecoimpact.html", "artdeco.jpg");
+artDeco = new Movement("Art Deco", "1925-1940", "artdecohistory.html", "artdecoimpact.html", "artdeco.jpg");
 bauhaus = new Movement("Bauhaus", "1920-1940", "bauhaushistory.html", "bauhausimpact.html", "bauhaus.jpg");
 swissStyle = new Movement("International Typographic Style(Swiss Style)", "1950-1970", "swissstylehistory.html", "swissstyleimpact.html", "swissstylejpg");
 kitsch = new Movement("American Kitsch", "1940’s - 1960’s", "kitschhistory.html", "kitschimpact.html", "kitsch.jpg");
