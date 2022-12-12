@@ -22,10 +22,12 @@ body{
   border: .5vh solid  #7960B3;
 }
 
-#timeline li{
+#timeline li a{
   list-style-type: none;
-  
+  text-decoration:none;
+  color: #000000;  
 }
+
 
 /*Styling for main content starts here*/
 
