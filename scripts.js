@@ -45,6 +45,7 @@ function Movement(movementName, movementDate, movementHistory, movementImpact, i
     loadFileInto(this.impact, "#impact p");
   }
 }
+
 //defining movements
 
 timelineStart = new Movement("Early Communication","Back in time","timelinestart.html","timelinestartimpact.html","");
@@ -59,7 +60,7 @@ popArt = new Movement("Pop Art", "1950’s - 1970’s", "poparthistory.html", "p
 newWave = new Movement("New Wave", "1970's-1980's", "newwavehistory.html", "newwaveimpact.html", "images/newwave.png");
 postModernism = new Movement("Post Modernism", "1970-1990’", "postmodernismhistory.html", "postmodernismimpact.html", "images/postmodernism.png");
 memphisDesign = new Movement("Memphis Design", " 1980’s-1990’", "memphishistory.html", "memphisimpact.html", "images/memphis.png");
-timelineEnd = new Movement("The Digital Era","1995-Present","timelineend.html","timelineendimpact.html","");
+timelineEnd = new Movement("The Digital Era","1995-Present","end.html","timelineendimpact.html","");
 
 //mouseover function definition
 /*
@@ -69,12 +70,7 @@ function displayBackground(){
 */
 
 window.onload = function() {
-  /*mouse over event
-  document.querySelector("firstMovement").onmouseover =function(){
-    displayBackground();
-  }
-  */
-
+  
   //onlcick events start here for timeline &
   document.querySelector("#startMovement").onclick = function() {
     timelineStart.displayMovement();
