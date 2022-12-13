@@ -47,18 +47,18 @@ function Movement(movementName, movementDate, movementHistory, movementImpact, i
 }
 //defining movements
 
-//timelineStart = new movement();
-artNouvea = new Movement("Art Nouvea", "1890-1915", "artnouveahistory.html", "artnouveaimpact.html", "images/artnouvea.jpg");
+timelineStart = new Movement("Early Communication"," ","timelinestart.html","timelineimpact.html","start.jpg");
+artNouveau = new Movement("Art Nouveau", "1890-1915", "artnouveahistory.html", "artnouveaimpact.html", "images/artnouvea.jpg");
 futurism = new Movement("Futurism", "1910-1930", "futurismhistory.html", "futurismimpact.html", "futurism.jpg");
 artDeco = new Movement("Art Deco", "1925-1940", "artdecohistory.html", "artdecoimpact.html", "artdeco.jpg");
 bauhaus = new Movement("Bauhaus", "1920-1940", "bauhaushistory.html", "bauhausimpact.html", "bauhaus.jpg");
 swissStyle = new Movement("International Typographic Style(Swiss Style)", "1950-1970", "swissstylehistory.html", "swissstyleimpact.html", "swissstylejpg");
 kitsch = new Movement("American Kitsch", "1940’s - 1960’s", "kitschhistory.html", "kitschimpact.html", "kitsch.jpg");
-popArt = new Movement("Pop Art ", "1970’s - 1980’", "poparthistory.html", "popartimpact.html", "popart.jpg");
-newWave = new Movement("New Wave", "1890-1915", "newwavehistory.html", "newwaveimpact.html", "newwave.jpg");
+popArt = new Movement("Pop Art", "1950’s - 1970’s", "poparthistory.html", "popartimpact.html", "popart.jpg");
+newWave = new Movement("New Wave", "1970's-1980's", "newwavehistory.html", "newwaveimpact.html", "newwave.jpg");
 postModernism = new Movement("Post Modernism", "1970-1990’", "postmodernismhistory.html", "postmodernismimpact.html", "postmodernism.jpg");
 memphisDesign = new Movement("Memphis Design", " 1980’s-1990’", "memphishistory.html", "memphisimpact.html", "memphis.jpg");
-//timelineEnd = new movement();
+timelineEnd = new Movement("The Digital Era","1995-Present","timelineend.html","timelineimpact.html","end.jpg");
 
 //mouseover function definition
 /*
@@ -74,11 +74,41 @@ window.onload = function() {
   }
   */
 
-  //onlcick events start here
+  //onlcick events start here for timeline &
   document.querySelector("#startMovement").onclick = function() {
     timelineStart.displayMovement();
   }
-  document.querySelector("#firstMovement").onclick = function() {
-    artNouvea.displayMovement();
+  document.querySelector("#firstMovement").onclick = function(){
+    artNouveau.displayMovement();
+  }
+  document.querySelector("#secondMovement").onclick = function(){
+    futurism.displayMovement();
+  }
+  document.querySelector("#thirdMovement").onclick = function(){
+    bauhaus.displayMovement();
+  }
+  document.querySelector("#fourthMovement").onclick = function(){
+    artDeco.displayMovement();
+  }
+  document.querySelector("#fifthMovement").onclick = function(){
+    kitsch.displayMovement();
+  }
+  document.querySelector("#sixthMovement").onclick = function(){
+    swissStyle.displayMovement();
+  }
+  document.querySelector("#seventhMovement").onclick = function(){
+    popArt.displayMovement();
+  }
+  document.querySelector("#eighthMovement").onclick = function(){
+    newWave.displayMovement();
+  }
+  document.querySelector("#ninthMovement").onclick = function(){
+    postModernism.displayMovement();
+  }
+  document.querySelector("#tenthMovement").onclick = function(){
+    memphisDesign.displayMovement();
+  }
+  document.querySelector("#endMovement").onclick = function(){
+    timelineEnd.displayMovement();
   }
 }
