@@ -47,18 +47,19 @@ function Movement(movementName, movementDate, movementHistory, movementImpact, i
 }
 //defining movements
 
-timelineStart = new Movement("Early Communication"," ","timelinestart.html","timelineimpact.html","start.jpg");
-artNouveau = new Movement("Art Nouveau", "1890-1915", "artnouveahistory.html", "artnouveaimpact.html", "images/artnouvea.png");
+timelineStart = new Movement("Early Communication","Back in time","timelinestart.html","timelinestartimpact.html","");
+artNouveau = new Movement("Art Nouveau", "1890-1915", "artnouveahistory.html", "artnouveaimpact.html", "images/artnouveau.png");
 futurism = new Movement("Futurism", "1910-1930", "futurismhistory.html", "futurismimpact.html", "images/futurism.png");
 artDeco = new Movement("Art Deco", "1925-1940", "artdecohistory.html", "artdecoimpact.html", "images/artdeco.png");
 bauhaus = new Movement("Bauhaus", "1920-1940", "bauhaushistory.html", "bauhausimpact.html", "images/bauhaus.png");
 swissStyle = new Movement("International Typographic Style(Swiss Style)", "1950-1970", "swissstylehistory.html", "swissstyleimpact.html", "images/swissstyle.png");
 kitsch = new Movement("American Kitsch", "1940’s - 1960’s", "kitschhistory.html", "kitschimpact.html", "images/kitsch.png");
+psychedelia = new Movement("Psychedelia", "1960's-1970's", "psychedeliahistory.html", "psychedeliaimpact.html", "images/psychedelic.png");
 popArt = new Movement("Pop Art", "1950’s - 1970’s", "poparthistory.html", "popartimpact.html", "images/popart.png");
 newWave = new Movement("New Wave", "1970's-1980's", "newwavehistory.html", "newwaveimpact.html", "images/newwave.png");
 postModernism = new Movement("Post Modernism", "1970-1990’", "postmodernismhistory.html", "postmodernismimpact.html", "images/postmodernism.png");
 memphisDesign = new Movement("Memphis Design", " 1980’s-1990’", "memphishistory.html", "memphisimpact.html", "images/memphis.png");
-timelineEnd = new Movement("The Digital Era","1995-Present","timelineend.html","timelineimpact.html","end.jpg");
+timelineEnd = new Movement("The Digital Era","1995-Present","timelineend.html","timelineendimpact.html","");
 
 //mouseover function definition
 /*
@@ -108,7 +109,21 @@ window.onload = function() {
   document.querySelector("#tenthMovement").onclick = function(){
     memphisDesign.displayMovement();
   }
+  document.querySelector("#extraMovement").onclick = function(){
+    psychedelia.displayMovement();
+  }
   document.querySelector("#endMovement").onclick = function(){
     timelineEnd.displayMovement();
+  }
+  document.querySelector("#reference").onclick = function(){
+    referenceList ="references.html";
+    imageList= "referenceimage.html";
+   
+    document.querySelector("#content h1").innerHTML = "References";
+    document.querySelector("#content h4").innerHTML = " ";
+    document.querySelector("#history h3").innerHTML = "History and Impact";
+    document.querySelector("#impact h3").innerHTML = "Images";
+    loadFileInto(referenceList, "#history p");
+    loadFileInto(imageList, "#impact p");
   }
 }
