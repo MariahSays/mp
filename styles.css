@@ -44,7 +44,7 @@ body{
 #content{
   border: .5vh solid  #7960B3;
   padding: 1vh;
-  background-image:none;
+  background-color: #FEF2E8;
 }
 
 #content h1{
@@ -58,15 +58,28 @@ body{
 
 /*footer starts here*/
 #footer{
+  position: absolute;
   background-color:#7960B3;
   margin: 0;
   padding: 0;
   width: 100%;
+  color: white;
 }
 
-#footer a p{
+#footer p{
   margin-left: 5em;
   margin-bottom: 0;
 }
-
+#footer a{
+  margin-left: 5em;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: white;
+}
+#footer a:hover{
+  margin-left: 5em;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: yellow;
+}
 

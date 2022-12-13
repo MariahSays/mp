@@ -38,7 +38,7 @@ function Movement(movementName, movementDate, movementHistory, movementImpact, i
   this.displayMovement = function() {
     document.querySelector("#content h1").innerHTML = this.name;
     document.querySelector("#content h4").innerHTML = this.date;
-    document.querySelector("#content").style.backgroundImage = this.image;
+    document.querySelector("body").style.backgroundImage = "url("+ this.image +")";
     document.querySelector("#history h3").innerHTML = "History";
     document.querySelector("#impact h3").innerHTML = "Impact";
     loadFileInto(this.history, "#history p");
@@ -48,16 +48,16 @@ function Movement(movementName, movementDate, movementHistory, movementImpact, i
 //defining movements
 
 timelineStart = new Movement("Early Communication"," ","timelinestart.html","timelineimpact.html","start.jpg");
-artNouveau = new Movement("Art Nouveau", "1890-1915", "artnouveahistory.html", "artnouveaimpact.html", "images/artnouvea.jpg");
-futurism = new Movement("Futurism", "1910-1930", "futurismhistory.html", "futurismimpact.html", "futurism.jpg");
-artDeco = new Movement("Art Deco", "1925-1940", "artdecohistory.html", "artdecoimpact.html", "artdeco.jpg");
-bauhaus = new Movement("Bauhaus", "1920-1940", "bauhaushistory.html", "bauhausimpact.html", "bauhaus.jpg");
-swissStyle = new Movement("International Typographic Style(Swiss Style)", "1950-1970", "swissstylehistory.html", "swissstyleimpact.html", "swissstylejpg");
-kitsch = new Movement("American Kitsch", "1940’s - 1960’s", "kitschhistory.html", "kitschimpact.html", "kitsch.jpg");
-popArt = new Movement("Pop Art", "1950’s - 1970’s", "poparthistory.html", "popartimpact.html", "popart.jpg");
-newWave = new Movement("New Wave", "1970's-1980's", "newwavehistory.html", "newwaveimpact.html", "newwave.jpg");
-postModernism = new Movement("Post Modernism", "1970-1990’", "postmodernismhistory.html", "postmodernismimpact.html", "postmodernism.jpg");
-memphisDesign = new Movement("Memphis Design", " 1980’s-1990’", "memphishistory.html", "memphisimpact.html", "memphis.jpg");
+artNouveau = new Movement("Art Nouveau", "1890-1915", "artnouveahistory.html", "artnouveaimpact.html", "images/artnouvea.png");
+futurism = new Movement("Futurism", "1910-1930", "futurismhistory.html", "futurismimpact.html", "images/futurism.png");
+artDeco = new Movement("Art Deco", "1925-1940", "artdecohistory.html", "artdecoimpact.html", "images/artdeco.png");
+bauhaus = new Movement("Bauhaus", "1920-1940", "bauhaushistory.html", "bauhausimpact.html", "images/bauhaus.png");
+swissStyle = new Movement("International Typographic Style(Swiss Style)", "1950-1970", "swissstylehistory.html", "swissstyleimpact.html", "images/swissstyle.png");
+kitsch = new Movement("American Kitsch", "1940’s - 1960’s", "kitschhistory.html", "kitschimpact.html", "images/kitsch.png");
+popArt = new Movement("Pop Art", "1950’s - 1970’s", "poparthistory.html", "popartimpact.html", "images/popart.png");
+newWave = new Movement("New Wave", "1970's-1980's", "newwavehistory.html", "newwaveimpact.html", "images/newwave.png");
+postModernism = new Movement("Post Modernism", "1970-1990’", "postmodernismhistory.html", "postmodernismimpact.html", "images/postmodernism.png");
+memphisDesign = new Movement("Memphis Design", " 1980’s-1990’", "memphishistory.html", "memphisimpact.html", "images/memphis.png");
 timelineEnd = new Movement("The Digital Era","1995-Present","timelineend.html","timelineimpact.html","end.jpg");
 
 //mouseover function definition
