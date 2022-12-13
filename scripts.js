@@ -71,7 +71,42 @@ function displayBackground(){
 
 window.onload = function() {
   
-  //onlcick events start here for timeline &
+ //mouseover events for timeline start here
+  document.querySelector("#firstMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/artnouveau.png"+")";
+  }
+  document.querySelector("#secondMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/futurism.png"+")";
+  }
+  document.querySelector("#thirdMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/bauhaus.png"+")";
+  }
+  document.querySelector("#fourthMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/artdeco.png"+")";
+  }
+  document.querySelector("#fifthMovement").onmouseover = function(){
+   document.querySelector("body").style.backgroundImage = "url("+"images/kitsch.png"+")";
+  }
+  document.querySelector("#sixthMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/swissstyle.png"+")";
+  }
+  document.querySelector("#seventhMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/popart.png"+")";
+  }
+  document.querySelector("#eighthMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/newwave.png"+")";
+  }
+  document.querySelector("#ninthMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/postmodernism.png"+")";
+  }
+  document.querySelector("#tenthMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/memphis.png"+")";
+  }
+  document.querySelector("#extraMovement").onmouseover = function(){
+    document.querySelector("body").style.backgroundImage = "url("+"images/psychedelic.png"+")";
+  }
+  
+  //onlcick events start here for timeline 
   document.querySelector("#startMovement").onclick = function() {
     timelineStart.displayMovement();
   }
